@@ -8,6 +8,6 @@
 </head>
 <body>
 <h2>ERREUR DE CONNEXION</h2>
-<a href="login.jsp">Merci de vous connecter</a>
+<a href="index.jsp">Merci de vous connecter</a>
 </body>
 </html>
