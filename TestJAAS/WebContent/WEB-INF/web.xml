@@ -22,24 +22,41 @@
 	<!-- mise en place de la protection -->
 	<security-constraint>
 		<display-name>authentification administrateur</display-name>
-		<!-- liste des pages protégées -->
+<!-- 		liste des pages protégées -->
 		<web-resource-collection>
 			<web-resource-name>les pages admin</web-resource-name>
 			<url-pattern>/admin/*</url-pattern>
 		</web-resource-collection>
-		<!-- rôles des utilisateurs qui y ont accès -->
+<!-- 		rôles des utilisateurs qui y ont accès -->
 		<auth-constraint>
-		<role-name>admin</role-name>
+			<role-name>admin</role-name>
 		</auth-constraint>
 	</security-constraint>
-	<!-- type d'authentification -->
+	<!-- <security-constraint> <display-name>authentification administrateur</display-name> 
+		liste des pages protégées <web-resource-collection> <web-resource-name>les 
+		pages client</web-resource-name> <url-pattern>/front/*</url-pattern> </web-resource-collection> 
+		rôles des utilisateurs qui y ont accès <auth-constraint> <role-name>client</role-name> 
+		</auth-constraint> </security-constraint> -->
+	<!-- mode BASIC -->
+	<!-- <login-config> <auth-method>BASIC</auth-method> <realm-name>Espace 
+		sécurisé</realm-name> </login-config> -->
+	<!-- mode FORM -->
 	<login-config>
-	<auth-method>BASIC</auth-method>
-	<realm-name>Espace sécurisé</realm-name>
+		<auth-method>FORM</auth-method>
+		<realm-name>Espace sécurisé</realm-name>
+		<!-- déclaration des formulaires de connexion -->
+		<form-login-config>
+			<form-login-page>/login.jsp</form-login-page>
+			<form-error-page>/error.jsp</form-error-page>
+		</form-login-config>
 	</login-config>
 	<!-- rôles utilisés dans l'application -->
 	<security-role>
-	<description>Administrateur</description>
-	<role-name>admin</role-name>
+		<description>Administrateur</description>
+		<role-name>admin</role-name>
 	</security-role>
+	<!-- <security-role>
+		<description>Client</description>
+		<role-name>client</role-name>
+	</security-role> -->
 </web-app>
