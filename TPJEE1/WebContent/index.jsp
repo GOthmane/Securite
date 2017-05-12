@@ -8,6 +8,6 @@
 </head>
 <body>
 <h2>BONJOUR</h2>
-<a href="/admin/ajouterClient.html">Ajouter Client</a><br/>
+<a href="admin/ajouterClient.html">Ajouter Client</a><br/>
 </body>
 </html>

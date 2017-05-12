@@ -48,7 +48,7 @@ public class ServletAjouter extends HttpServlet {
 				request.setAttribute("leprenom", prenom);
 				
 				//4- envoi
-				request.getRequestDispatcher("/ajouter.jsp").forward(request, response);
+				request.getRequestDispatcher("/admin/ajouter.jsp").forward(request, response);
 	}
 
 	/**
