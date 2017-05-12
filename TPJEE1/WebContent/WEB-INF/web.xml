@@ -17,7 +17,7 @@
 <!-- 		liste des pages protégées -->
 		<web-resource-collection>
 			<web-resource-name>les pages admin</web-resource-name>
-			<url-pattern>/ajouterClient.html</url-pattern>
+			<url-pattern>/admin/*</url-pattern>
 		</web-resource-collection>
 <!-- 		rôles des utilisateurs qui y ont accès -->
 		<auth-constraint>

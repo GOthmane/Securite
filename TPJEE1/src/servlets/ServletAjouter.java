@@ -14,7 +14,7 @@ import service.IClientService;
 /**
  * Servlet implementation class ServletAjouter
  */
-@WebServlet("/ServletAjouter")
+@WebServlet("/admin/ServletAjouter")
 public class ServletAjouter extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private IClientService service = new ClientService();
